@@ -1,0 +1,42 @@
+<!--  
+Сделать игру с двумя игроками с
+бесконечным числом попыток. Сделайте возможность выйти из игры по желанию одного из
+игроков.
+-->
+
+<script type="text/javascript">
+	
+
+	var answer = parseInt(Math.random() * 100);
+	var count = 0;
+	while(true) {
+	var answerUser1 = +prompt("Игрок 1, введите число от 1 до 100: ");
+
+
+	{
+		if(answer == answerUser1){
+			alert("Congratulations, you guessed the number!");
+			break;
+		} else if(answerUser1 < answer){
+			alert("You entered too small a number!");
+		} else if(answerUser1 > answer) {
+			alert("You entered too many numbers!");
+			else if()
+		}
+	}
+
+	var answerUser2 = +prompt("Игрок 2, введите число от 1 до 100: ");
+	{
+		if(answer == answerUser2){
+			alert("Congratulations, you guessed the number!");
+			break;
+		} else if(answerUser2 < answer){
+			alert("You entered too small a number!");
+		} else if(answerUser2 > answer) {
+			alert("You entered too many numbers!");
+		}
+	}
+}
+
+	
+</script>
