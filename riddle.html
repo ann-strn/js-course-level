@@ -1,41 +1,35 @@
 <script type="text/javascript">
 
+	alert("Welcome to the Guess riddles section!");
 	var count = 0;
 	var answerUser = prompt("What is full of holes, but can still hold a lot of water?");
-	if(answerUser == "sponge" || answerUser == "a sponge" || answerUser == "Sponge"){
-		alert("Congratulations! The game is over!");
+	if(answerUser == "sponge" || answerUser == "a sponge" || answerUser == "Sponge") {
+		alert("Congratulations! That's right!");
 		count++;
+	} else {
+		alert("Not right");
 	}
-	else
-		alert("You've lost!");
-
 	var answerUser1 = prompt("What goes through towns and over hills but never moves?");
-	var answer1 = "road";
 	if(answerUser1 == "road" || answerUser1 == "a road" || answerUser1 == "Road") {
-		alert("Congratulations! The game is over!");
+		alert("Congratulations! That's right!");
 		count++;
 	} else {
-		alert("You've lost!");
+		alert("Not right");
 	}
-
 	var answerUser2 = prompt("You can catch it, but not throw it? What is it? ");
-	var answer2 = "cold";
-	if(answer2 == answerUser2){
-		alert("Congratulations! The game is over!");
+	if(answerUser2 == "cold" || answerUser2 == "a cold" || answerUser2 == "Cold") {
+		alert("Congratulations! That's right!");
 		count++;
 	} else {
-		alert("You've lost!");
+		alert("Not right");
 	}
-
 	var answerUser3 = prompt("This travels around the world but stays in one spot? What is it?");
-	var answer3 = "stamp";
-	if(answer3 == answerUser3){
-		alert("Congratulations! The game is over!");
+	if(answerUser3 == "stamp" || answerUser3 == "a stamp" || answerUser3 == "Stamp") {
+		alert("Congratulations! That's right!");
 		count++;
 	} else {
-		alert("You've lost!");
+		alert("Not right");
 	}
-
 	alert("Number of correct answers: " + count)
 
 </script>
