@@ -1,0 +1,73 @@
+<script type="text/javascript">
+	
+	function numbers(n) {
+		var arr = [];
+		for(var i = 1; i <= n; i++) {
+			arr.push(i);
+		}
+			return arr;
+	}
+
+	function numbersSum(arr) {
+		var sum = 0;
+			for(var i = 0; i < arr.length; i++) {
+			sum += arr[i];
+			}
+		return sum;
+	}
+
+	function numbersMax(arr) {
+		var max = arr[0];
+			for(var i = 1; i < arr.length; i++) {
+				if(max < arr[i]) {
+					max = arr[i];
+				}
+			}
+		return max;
+	}
+
+	function numbersMin(arr) {
+		var min = arr[0];
+			for(var i = 1; i < arr.length; i++) {
+				if(min > arr[i]) {
+					min = arr[i];
+				}
+			}
+		return min;
+	}
+
+	function numbersEven(arr) {
+		var even = [];
+			for(var i = 0; i < arr.length; i++) {
+				if(arr[i] % 2 == 0) {
+					even.rush(arr[i]);
+				} else {
+					continie;
+				}
+			}
+			return even;
+	}
+
+	do {
+		var n = +prompt("a) Введите n (>0) - размер массива, элементы которого будут иметь значения 1, 2, 3… n");	
+		} while(isNaN(n) || (n <= 0));
+		var numbersNum = numbers(n);
+		alert("а) Получилось вот что: " + numbersNum);
+
+		alert("b) Теперь посчитаем сумму элементов массива. Например, вот этого (из предыдущего примера): " + numbersNum);
+		var sumNumber = numbersSum(numbersNum);
+		alert("b) Сумма элементов массива: " + sumNumber);	
+
+		alert("c) Теперь найдем в массиве максимальное число. Возьмем для примера предыдущий массив: " + numbersNum);
+		var maxNumber = numbersMax(numbersNum);
+		alert("c) Максимальное число в массиве: " + maxNumber);	
+
+		alert("d) Теперь найдем в массиве минимальное число. Опять же на примере предыдущего массива: " + numbersNum);
+		var minNumbers = numbersMin(numbersNum);
+		alert("d) Минимальное число в массиве: " + minNumbers);	
+
+		lert("f) Теперь выведем только четные числа массива (на примере предыдущего массива): " + numbersNum);
+		var evenNumbers = numbersEven(numbersNum);
+		alert("f) Получился такой 'четный' массив: " + evenNumbers);
+
+</script>
