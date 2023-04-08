@@ -1,0 +1,38 @@
+<script type="text/javascript">
+	
+	function askForWords(words) {
+		while(words.length != 0) {
+			var i = parseInt(Math.random() * words.length);
+			var userAnswer = prompt("Как переводится слово: " + words[i][0]);
+			if(userAnswer == words[i][1]) {
+				alert("Правильно!");
+				words.splice(i, 1);
+			} else {
+				alert("Не угадали! Правильный ответ: " + words[i][1]);
+			}
+		}
+	}
+
+	var easyWords = [
+		["bike", "велосипед"],
+		["salt", "соль"],
+		["cat", "кот"],
+		["mean", "иметь в виду"],
+		["do", "делать"],
+	];
+
+	askForWords(easyWords);
+
+	alert("Поздравляю, вы запомните все слова! Переходим на следующий уровень! ");
+
+var hardWords = [
+		["chainsaw", "бензопила"],
+		["squirrel", "белка"],
+		["castle", "замок"],
+		["homeland", "родина"],
+		["bottom", "дно"],
+	];
+
+	askForWords(hardWords);
+
+</script>
