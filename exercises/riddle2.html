@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	
+
+	var ridArr = [
+	["Загадка №1\nСтранный дождь порой идет:\nсотней струй он кверху бьет.\nВведите ответ: ", "фонтан"],
+	["Чем больше из неё берёшь, тем больше она становится.\nВведите ответ:", "яма"],
+
+	["Кто может поднять и передвинуть и коня, и слона?\nВведите ответ:", "шахматист"],
+	]
+
+	function Riddle(array){
+		var n = 0;
+		for(var i = 0; i < ridArr.length; i++){
+
+		var userAnswer = prompt(ridArr[i][0]);
+		userAnswer = userAnswer.toLowerCase();
+		if(userAnswer == ridArr[i][1]){
+		alert("Поздравляю!\nВерно.");
+		n ++;
+			} else {
+				alert("Не угадал!");
+		}
+    }
+	
+	alert("Всего угаданных загадок: " + n);
+}
+	Riddle(ridArr)
+	
+</script>
